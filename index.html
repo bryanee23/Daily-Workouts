@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fitness Motivation</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.12/c3.css"
+    integrity="sha256-JmJIMXSQ/YZLOWExfC5Ao0ic++r5gI3v1hhv75p8+OM=" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.12/c3.js"
+    integrity="sha256-ANlEXYIEV2MqTqivUfl1/5L0RmG+NIW2Xuiz3VsZPrA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+
+
+<body>
+  <!-- Nav Box -->
+  <div class="wrapper">
+
+  <nav id=“nav-box”>
+    <div class="topnav">
+      <a class="logo" href="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/errorPage.html" target="_blank"> <img src="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/images/logo.png" , width="100", height="80"></a>
+
+      <div class="topnav-right">
+        <a href="#mid-container"> Edit Workouts </a>
+        <a href="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/errorPage.html" target="_blank"> About Me </a>
+        <a href="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/errorPage.html" target="_blank">Contact Me </a>
+        <form id="todays-workout-forms" class="edit-forms">
+          <input id="todays-inp-key" type="text" name="key" placeholder="Day of the Week">
+          <button id="show-button" class="show-btn" type="submit">Show Workout</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- top container -->
+  <div id="top-container" class="top-container">  <!-- Top Containter -->
+
+    <div class="top-container-left">
+      <div id="today-container" class="inner-top-container">
+         <br />
+        <button class="todays-workout-button" id="Sunday-today">Sunday</button>
+        <button class="todays-workout-button" id="Monday-today">Monday</button>
+        <button class="todays-workout-button" id="Tuesday-today">Tuesday</button>
+        <button class="todays-workout-button" id="Wednesday-today">Wednesday</button>
+        <button class="todays-workout-button" id="Thursday-today">Thursday</button>
+        <button class="todays-workout-button" id="Friday-today">Friday</button>
+        <button class="todays-workout-button" id="Saturday-today">Saturday</button>
+          <!-- displays workout populated by JS-->
+        <div class="display" id="display" style="display:none;"></div>
+
+      </div>
+     <div id="top-container-quote" class="top-container-quote">"Great things come from hard work and perseverance. No excuses." <br /> - Kobe Bryant
+      </div>
+     </div>
+    <br/>
+    <div class="top-container-right"><img id="img"src="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/images/kobe.png" , width="700", height="500"></div>
+
+    </div><!-- end top Containter -->
+
+
+
+
+  <!-- middle container -->
+  <div id="mid-container", class="mid-container">
+
+    <div id="mid-container-left", class="mid-container-left">
+  <div id="edit-container" class="edit-container" > Workout Overview <br />
+    <form id="edit-forms" class="edit-forms">
+      <input id="inp-key" type="text" name="key" placeholder="Day of the Week">
+      <input id="inp-value" type="text" name="value" placeholder="Input workout type">
+      <button id="create-button" type="submit">Add</button>
+      <button id="update-button" type="submit">Update</button>
+      <button id="delete-button" type="submit">Delete</button>
+      <button id="clear-button" type="submit">Clear</button>
+    </form>
+    <p id="Sunday"></p>
+    <p id="Monday"></p>
+    <p id="Tuesday"></p>
+    <p id="Wednesday"></p>
+    <p id="Thursday"></p>
+    <p id="Friday"></p>
+    <p id="Saturday"></p>
+  </div></div> <!-- end mid container left -->
+
+  <div id="mid-container-right", class="mid-container-right"><img id="img"src="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/images/ads.png" , width="650", height="300"></div>
+</div>   <!-- end middle container -->
+
+
+
+<!-- bottom container -->
+
+  <div id="bottom-container", class="bottom-container">
+
+    <div id="bottom-container-left", class="bottom-container-left">
+      <a href="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/errorPage.html" target="_blank">
+        <img id="thumbnails" src="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/images/left.png" , width="250", height="250">
+      </a>
+    </div>
+
+    <div id="bottom-container-middle", class="bottom-container-middle">
+      <a href="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/errorPage.html" target="_blank">
+        <img id="thumbnails" src="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/images/middle.png" , width="250", height="250">
+      </a>
+    </div>
+
+    <div id="bottom-container-right", class="bottom-container-right">
+      <a href="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/errorPage.html" target="_blank">
+        <img id="thumbnails" src="/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/images/right.png" , width="250", height="250">
+      </a>
+    </div>
+
+
+  </div>   <!-- end bottom container -->
+
+  <footer>not &copy; -- Hack Reactor Extended Capstone Project by Bryan Evangelista</footer>
+
+</div><!-- end wrapper -->
+  <script src="app/app.js"></script>
+
+
+</body>
+
+</html>

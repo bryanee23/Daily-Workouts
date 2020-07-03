@@ -1,0 +1,207 @@
+/* original blocks */
+body {
+  color: black;
+  background-image: url("/Users/Bryan/Documents/hrext/week 5/hrext14-sprint-my-cruddy-app/images/background.png");
+  background-position: center;
+  font-family: Calibri, sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+button { /* button */
+  font-size: 14px;
+
+}
+.wrapper {
+  width: auto;
+  margin: 20px, auto, 20px, auto;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+}
+
+#img { /* auto image sizing tagged to an id */
+  width: 90%;
+  height: auto;
+}
+
+/* navigation */
+.topnav { /* nav links*/
+  color:  #666666;
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 32px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+}
+
+.topnav a.logo { /* logo */
+  padding: 0px;
+}
+
+.topnav-right {/* put search on rightside */
+  float: right;
+}
+
+.topnav .edit-forms { /* showWorkout box */
+  float: right;
+}
+
+.topnav input[type=text] {/* showWorkout box */
+  padding: 6px;
+  margin-top: 25px;
+  font-size: 12px;
+  border: 3px, solid #ddd;
+}
+
+.topnav .show-btn { /* showWorkout box */
+  float: right;
+  padding: 6px 10px;
+  margin-top: 25px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* top container */
+.top-container {
+display: flex;
+box-sizing: border-box;
+background-color: black;
+width: auto;
+height: auto;
+padding: 20px
+}
+
+.inner-top-container { /* buttons */
+  text-align: center;
+  box-sizing: border-box;
+  background-color: white;
+  height: 40%;
+  padding: 10px;
+  width: 550px;
+  margin: 10%;
+}
+
+.display {
+  text-align: center;
+  margin: 50px;
+  font-size: xx-large;
+  font-style: bold;
+}
+
+.top-container-quote{ /*quote */
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  height: auto;
+  padding: 40px;
+  margin-bottom: 0px
+}
+
+.top-container-left { /*controls */
+  height: 500px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.top-container-right { /* kobe pic */
+  height: 500px;
+  width: 100%;
+  margin-right: auto;
+}
+
+
+
+/* mid container */
+.mid-container {
+  display: flex;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+
+.mid-container-left { /*controls */
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  padding-left: 5%;
+
+}
+
+.mid-container-right { /* ads pic */
+  height: auto;
+  width: auto;
+  margin-right: auto;
+}
+
+
+
+/* bottom container */
+.bottom-container {
+  display: flex;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  padding: 2px;
+  border: 1px #A9A9A9;
+  background-color: #A9A9A9;
+
+}
+
+#thumbnails {
+  border: 2px solid black;
+}
+
+ .bottom-title {
+text-align: center;
+color: aquamarine;
+  }
+
+.bottom-container-left { /*controls */
+padding-left: 13%;
+margin-top: 10%;
+margin-bottom: 10%;
+}
+
+.bottom-container-middle { /*controls */
+  padding-left: 12%;
+  padding-right: 12%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+
+}
+
+.bottom-container-right { /* kobe pic */
+  padding-right: 13%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+footer { /* kobe pic */
+ margin-top: 1%;
+ text-align: center;
+ color: black;
+ font-style: italic;
+ font-size: smaller;
+}
