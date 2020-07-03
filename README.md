@@ -31,14 +31,10 @@
 
 ---
 
-
----
-
 ## Disclamier
 - The images used in this project are not my property and were only used for educational purposes. Please don't sue me!
 
 - This project is not affiliated with the NBA or Kobe Bryant. Please don't sue me!
-<br/>
 
 ---
 
